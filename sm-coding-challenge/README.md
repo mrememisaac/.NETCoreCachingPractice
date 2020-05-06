@@ -18,10 +18,10 @@
 Notes
 * In a real world scenario this data would also be stored in a relational or nosql data store
 * We would do alot more with the data returned from the API for instance we would
-    want to create a new player record for every new player found
-    that means we would have a cache of player_ids that we would reference to determine the existence of new players
-    we would check if the skills (rushes, passes...) returned already exist and if not we would add them to the data store
-    we would introduce pagination when fetching a player object graph meaning that we could return say only 50 skills per skill type
-    we would also use refeactor the method that creates a player model from the thirdparty apis such that we have PassSkillLoader which loads only pass skills, RushSkillLoader which loads only rush skills
-    this would reduce the size of the function and clean up that file. It would in theses classes that we would do the check for skill already in our data store
+  *   want to create a new player record for every new player found
+  *   that means we would have a cache of player_ids that we would reference to determine the existence of new players
+  *   we would check if the skills (rushes, passes...) returned already exist and if not we would add them to the data store
+  *   we would introduce pagination when fetching a player object graph meaning that we could return say only 50 skills per skill type
+  *   we would also use refeactor the method that creates a player model from the thirdparty apis such that we have PassSkillLoader which loads only pass skills, RushSkillLoader which loads only rush skills
+  *   this would reduce the size of the function and clean up that file. It would in theses classes that we would do the check for skill already in our data store
     
